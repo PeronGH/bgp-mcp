@@ -1,0 +1,25 @@
+{
+	"name": "bgp-mcp",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit",
+		"format": "oxfmt --write .",
+		"lint": "oxlint"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/server": "2.4.0",
+		"agents": "^0.33.0",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"oxfmt": "^0.78.0",
+		"oxlint": "^1.93.0",
+		"typescript": "^7.0.2",
+		"wrangler": "^4.160.0"
+	}
+}
